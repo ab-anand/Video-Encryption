@@ -19,6 +19,20 @@ With the help of that algorithm we would be encrypting videos using Selective Fr
 
 --- 
 
+### Milestones of the Project
+
+- [x] <b>Capturing Frames</b>
+	- <i>Getting particular frames from a given video</i>.
+- [ ] <b>Strategy for selecting frames</b>
+	- <i> Deciding algorithm for selecting frames for `Selective Frame Encryption`</i>.
+- [ ] <b>Scrambling the frames</b>
+	- <i>Using SFCs to encrypt the acquired frame</i>.
+- [ ] <b>Putting back the Frames</b>
+	- <i>Pushing the scrambled frames back in the output video</i>.
+
+---
+
+
 ### Installation 
 
 #### Use Python 3x
@@ -51,16 +65,3 @@ $ pip install -r requirements.txt
 $ python capture_frames.py playback.mp4
 ``` 
 
-
----
-
-### Milestones of the Project
-
-- [x] <b>Capturing Frames</b>
-	- <i>Getting particular frames from a given video</i>.
-- [ ] <b>Strategy for selecting frames</b>
-	- <i> Deciding algorithm for selecting frames for `Selective Frame Encryption`</i>.
-- [ ] <b>Scrambling the frames</b>
-	- <i>Using SFCs to encrypt the acquired frame</i>.
-- [ ] <b>Putting back the Frames</b>
-	- <i>Pushing the scrambled frames back in the output video</i>.
