@@ -1,5 +1,6 @@
 ## Video Encryption using [Space Filling Curves](https://en.wikipedia.org/wiki/Space-filling_curve) 
-[![Python 3x](https://img.shields.io/pypi/pyversions/django?color=green&style=plastic)]
+![Python 3x](https://img.shields.io/pypi/pyversions/django?color=green&style=plastic)
+
 <p align="center">
   <img src="img.jpg">
 </p>
