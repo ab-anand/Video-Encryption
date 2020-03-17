@@ -5,12 +5,12 @@ With the help of that algorithm we would be encrypting videos using Selective Fr
 
 ### Project Files
 
-Markup : * `capture_frames.py` 
-			* This files uses OpenCV and other tools to capture a particular frame.
-			* It takes the location of the video through commandline arguments.
-			* It then capture frames at every 6 seconds interval.
-			* Output frames are then saved in the `Frames` folder.
-			* The code has been provided with relevant comments for further information.
+* `capture_frames.py` 
+	* This files uses OpenCV and other tools to capture a particular frame.
+	* It takes the location of the video through commandline arguments.
+	* It then capture frames at every 6 seconds interval.
+	* Output frames are then saved in the `Frames` folder.
+	* The code has been provided with relevant comments for further information.
 
 --- 
 
