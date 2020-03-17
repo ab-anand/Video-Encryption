@@ -8,6 +8,12 @@ vid_path = str(sys.argv[1])
 
 # Function to extract frames 
 def FrameCapture(path): 
+    '''This func takes the 
+    video path as input and 
+    captures the frame at every 
+    six seconds interval and
+    saves the frame in Frames folder
+    '''
       
     start_time = time.time()
 
