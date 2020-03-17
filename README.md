@@ -1,5 +1,6 @@
 ## Encryption using [Space Filling Curves](https://en.wikipedia.org/wiki/Space-filling_curve)
-
+This project is aimed to create an algorithm to prevent the Choosen Plain Text Attack  
+on Space Filling Curves.
 
 
 ### Installation 
@@ -8,21 +9,20 @@
 
 #### Install virtual environment:
 ```bash
-virtualenv -p python3 envname
+$ virtualenv -p python3 envname
 ``` 
 #### Activate the environment: 
 ```bash
-source envname/bin/activate
+$ source envname/bin/activate
 ``` 
 #### Install the requirements using requirements.txt file: 
 ```bash
-pip install -r requirements.txt
+$ pip install -r requirements.txt
 ``` 
-`$ pip install -r requirements.txt`
 
 #### Run the file: 
 ```bash
-python capture_frames.py playback.mp4
+$ python capture_frames.py playback.mp4
 ``` 
 
 
@@ -35,6 +35,6 @@ python capture_frames.py playback.mp4
 - [ ] <b>Strategy for selecting frames</b>
 	- <i> Deciding technique for selecting frames for `Selective Frame Encryption`.
 - [ ] <b>Scrabling the frames</b>
-	- <i>Using SFCs to encrypt the acquired frame</i>
+	- <i>Using SFCs to encrypt the acquired frame</i>.
 - [ ] <b>Putting back the Frames</b>
-	- <i>Pushing the scrambled frames back in the output video</i>
+	- <i>Pushing the scrambled frames back in the output video</i>.
