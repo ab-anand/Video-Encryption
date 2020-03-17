@@ -1,4 +1,6 @@
 ## Encryption using [Space Filling Curves](https://en.wikipedia.org/wiki/Space-filling_curve)
+![Video Encryption](img.jpg)
+
 This project is aimed to create an algorithm to prevent the Choosen Plain Text Attack on Space Filling Curves.  
 With the help of that algorithm we would be encrypting videos using Selective Frame Encryption.
 
