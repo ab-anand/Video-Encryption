@@ -1,5 +1,5 @@
 ## Encryption using [Space Filling Curves](https://en.wikipedia.org/wiki/Space-filling_curve)
----
+
 
 
 ### Installation Guide:
@@ -16,3 +16,16 @@
 #### Run the file: 
 `$ python capture_frames.py`
 
+
+---
+
+### Milestones of the Project
+
+- [x] <b>Capturing Frames</b>
+	- <i>Getting particular frames from a given video</i>.
+- [x] <b>Strategy for selecting frames</b>
+	- <i> Deciding technique for selecting frames for `Selective Frame Encryption`.
+- [x] <b>Scrabling the frames</b>
+	- <i>Using SFCs to encrypt the acquired frame</i>
+- [x] <b>Putting back the Frames</b>
+	- <i>Pushing the scrambled frames back in the output video</i>
