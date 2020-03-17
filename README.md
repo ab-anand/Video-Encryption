@@ -7,6 +7,7 @@
 This project is aimed to implement an algorithm to prevent the Chosen Plain Text Attack on Space Filling Curves.  
 With the help of that algorithm we would be encrypting videos using Selective Frame Encryption.
 
+---
 
 ### Project Files
 
