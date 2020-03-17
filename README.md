@@ -1,6 +1,6 @@
 ## Encryption using [Space Filling Curves](https://en.wikipedia.org/wiki/Space-filling_curve)
-This project is aimed to create an algorithm to prevent the Choosen Plain Text Attack  
-on Space Filling Curves.
+This project is aimed to create an algorithm to prevent the Choosen Plain Text Attack on Space Filling Curves.  
+With the help of that algorithm we would be encrypting videos using Selective Frame Encryption.
 
 
 ### Installation 
@@ -33,7 +33,7 @@ $ python capture_frames.py playback.mp4
 - [x] <b>Capturing Frames</b>
 	- <i>Getting particular frames from a given video</i>.
 - [ ] <b>Strategy for selecting frames</b>
-	- <i> Deciding technique for selecting frames for `Selective Frame Encryption`.
+	- <i> Deciding technique for selecting frames for `Selective Frame Encryption`</i>.
 - [ ] <b>Scrabling the frames</b>
 	- <i>Using SFCs to encrypt the acquired frame</i>.
 - [ ] <b>Putting back the Frames</b>
