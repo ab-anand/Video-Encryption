@@ -20,7 +20,7 @@ With the help of that algorithm we would be encrypting videos using Selective Fr
 
 #### Clone the repository
 ```bash
-$ git clone 
+$ git clone https://github.com/ab-anand/Video-Encryption.git
 ``` 
 
 #### Move inside the folder
