@@ -23,9 +23,9 @@
 
 - [x] <b>Capturing Frames</b>
 	- <i>Getting particular frames from a given video</i>.
-- [x] <b>Strategy for selecting frames</b>
+- [ ] <b>Strategy for selecting frames</b>
 	- <i> Deciding technique for selecting frames for `Selective Frame Encryption`.
-- [x] <b>Scrabling the frames</b>
+- [ ] <b>Scrabling the frames</b>
 	- <i>Using SFCs to encrypt the acquired frame</i>
-- [x] <b>Putting back the Frames</b>
+- [ ] <b>Putting back the Frames</b>
 	- <i>Pushing the scrambled frames back in the output video</i>
