@@ -3,6 +3,6 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-
+curves/
 *.avi
 encrypt.py
