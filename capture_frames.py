@@ -1,8 +1,9 @@
 import cv2 
 import time
 import sys
-  
-
+from frame_editor import frame_edit
+from resize_frame import res
+from encrypt import showw
 vid_path = str(sys.argv[1])
 
 
@@ -20,6 +21,24 @@ def FrameCapture(path):
     # Path to video file 
     vidObj = cv2.VideoCapture(path) 
   
+    # frame rate
+    fps = vidObj.get(cv2.CAP_PROP_FPS)
+
+    # Default resolutions of the frame are obtained.The default resolutions are system dependent.
+    # We convert the resolutions from float to integer.
+    # frame_width = int(vidObj.get(3))
+    # frame_height = int(vidObj.get(4))
+    frame_width = 1024
+    frame_height = 1024
+
+
+    # fourcc
+    fourcc = vidObj.get(cv2.CAP_PROP_FOURCC)
+    # print(fourcc)
+    # output video file
+    out = cv2.VideoWriter('output.avi',cv2.VideoWriter_fourcc('M','J','P','G'), fps, (frame_width,frame_height))
+
+
     # Used as counter variable 
     count = 0
   
@@ -31,19 +50,29 @@ def FrameCapture(path):
         # vidObj object calls read 
         # function extract frames 
         success, image = vidObj.read() 
-  
-        curr_time = time.time()
 
         # Getting the current position of the video file(time) and converting it to seconds.
         fr = int(vidObj.get(0))//1000
 
         # Saves the frames with frame-count with at every 6 second interval 
-        if fr%6 == 0:
-            print(fr)
-            cv2.imwrite("frames/frame%d.jpg" % (count), image)   
-  
-        count += 1
-        # time.sleep(5)
+        if fr%4 == 0:
+            if success:
+                image = frame_edit(image)
+        else:
+            image = res(image, 1024, 1024)
+        #     print(fr)
+        #     cv2.imwrite("frames/frame%d.jpg" % (count), image)   
+        # image = frame_edit(image, count)
+
+        
+
+        out.write(image)
+        # count += 1
+        # break
+    print(time.time()-start_time)
+    vidObj.release()
+    out.release()
+
   
 # Driver Code 
 if __name__ == '__main__': 
