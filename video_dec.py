@@ -3,7 +3,8 @@ import time
 import sys
 from frame_editor import frame_edit
 from resize_frame import res
-from encrypt import showw
+from decrypt import get_pixels_json
+
 vid_path = str(sys.argv[1])
 
 
@@ -26,18 +27,14 @@ def FrameCapture(path):
 
     # Default resolutions of the frame are obtained.The default resolutions are system dependent.
     # We convert the resolutions from float to integer.
-    # frame_width = int(vidObj.get(3))
-    # frame_height = int(vidObj.get(4))
-    frame_width = 1024
-    frame_height = 1024
-
+    frame_width = 1280
+    frame_height = 720
 
     # fourcc
     fourcc = vidObj.get(cv2.CAP_PROP_FOURCC)
     # print(fourcc)
     # output video file
-    out = cv2.VideoWriter('output.avi',cv2.VideoWriter_fourcc('M','J','P','G'), fps, (frame_width,frame_height))
-
+    out = cv2.VideoWriter('output_dec.avi',cv2.VideoWriter_fourcc('M','J','P','G'), fps, (frame_width,frame_height))
 
     # Used as counter variable 
     count = 0
@@ -57,18 +54,22 @@ def FrameCapture(path):
         # Saves the frames with frame-count with at every 6 second interval 
         # if fr%4 == 0:
         #     if success:
-        #         image = frame_edit(image)
+        #         image = get_pixels_json(image, 1024)
         # else:
-        #     image = res(image, 1024, 1024)
+        #     image = res(image, 1280, 720)
+        #     print(fr)
         #     cv2.imwrite("frames/frame%d.jpg" % (count), image)   
-   
-        image = frame_edit(image)
+        # image = frame_edit(image, count)
 
-        out.write(image)
+        if success:
+            image = get_pixels_json(image, 1024)
+        
         count += 1
+        out.write(image)
+        # count += 1
         # break
     print("Time taken to encrypt = {}".format(time.time()-start_time))
-    print("Numeber of frames = {}".format(count))
+    print("Number of frames = {}".format(count))
     vidObj.release()
     out.release()
 

@@ -24,12 +24,14 @@ With the help of that algorithm we would be encrypting videos using Selective Fr
 
 - [x] <b>Capturing Frames</b>
 	- <i>Getting particular frames from a given video</i>.
-- [ ] <b>Strategy for selecting frames</b>
+- [x] <b>Strategy for selecting frames</b>
 	- <i> Deciding algorithm for selecting frames for `Selective Frame Encryption`</i>.
-- [ ] <b>Scrambling the frames</b>
+- [x] <b>Scrambling the frames</b>
 	- <i>Using SFCs to encrypt the acquired frame</i>.
-- [ ] <b>Putting back the Frames</b>
+- [x] <b>Putting back the Frames</b>
 	- <i>Pushing the scrambled frames back in the output video</i>.
+- [x] <b>Decrypting it back</b>
+	- <i>Converting the scrambled frames back to original frame and create the output video</i>.
 
 ---
 

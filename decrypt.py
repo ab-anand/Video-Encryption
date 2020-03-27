@@ -39,28 +39,26 @@ def get_pixels(enc_frame, width):
 
 
 
-def get_pixels_json(pix_dic, enc_frame, width):
+def get_pixels_json(enc_frame, width):
+	pix_dic = load_hilbert()
 	new_frame = np.copy(enc_frame)
 	count = 0
 	pos = 0
 	for key, value in pix_dic.items():
 		row = int(key)//width
 		col = int(key)%width
-		if pos < value[0]:
-			pos = value[0]
 		# print(row, col)     
 		# pos = hilbert_curve.distance_from_coordinates([row, col])       
 		new_frame[value[0]][value[1]] = enc_frame[row][col]
 		# new_frame[row][col] = org_frame[value[0]][value[1]]
 		count += 1
 	print(count)
-	print(pos)
 	new_frame = res(new_frame, 1280, 720)
-	cv2.imwrite('frames/frame_dec.jpg', new_frame)
+	# cv2.imwrite('frames/frame_dec.jpg', new_frame)
+	return new_frame
 
 
-hilbert_pixels = load_hilbert()
-enc_frame = cv2.imread('frames/frame_enc.jpg', cv2.IMREAD_UNCHANGED)
+# enc_frame = cv2.imread('frames/frame_enc.jpg', cv2.IMREAD_UNCHANGED)
 # enc_frame = res(enc_frame, 1024, 1024)
 # get_pixels(enc_frame, 1280)
-get_pixels_json(hilbert_pixels, enc_frame, 1024)
+# get_pixels_json(enc_frame, 1024)
