@@ -52,17 +52,17 @@ def FrameCapture(path):
         fr = int(vidObj.get(0))//1000
 
         # Saves the frames with frame-count with at every 6 second interval 
-        # if fr%4 == 0:
-        #     if success:
-        #         image = get_pixels_json(image, 1024)
-        # else:
-        #     image = res(image, 1280, 720)
-        #     print(fr)
-        #     cv2.imwrite("frames/frame%d.jpg" % (count), image)   
+        if fr%3 == 0:
+            if success:
+                image = get_pixels_json(image, 1024)
+        else:
+            image = res(image, 1280, 720)
+            print(fr)
+            # cv2.imwrite("frames/frame%d.jpg" % (count), image)   
         # image = frame_edit(image, count)
 
-        if success:
-            image = get_pixels_json(image, 1024)
+        # if success:
+        #     image = get_pixels_json(image, 1024)
         
         count += 1
         out.write(image)

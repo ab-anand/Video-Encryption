@@ -58,7 +58,7 @@ def get_pixels_json(enc_frame, width):
 	return new_frame
 
 
-# enc_frame = cv2.imread('frames/frame_enc.jpg', cv2.IMREAD_UNCHANGED)
+# enc_frame = cv2.imread('frames/frame_enc_9.jpg', cv2.IMREAD_UNCHANGED)
 # enc_frame = res(enc_frame, 1024, 1024)
 # get_pixels(enc_frame, 1280)
 # get_pixels_json(enc_frame, 1024)
