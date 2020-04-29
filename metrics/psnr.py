@@ -12,10 +12,12 @@ def PSNR(original, compressed):
     return psnr 
   
 def main(): 
-     original = cv2.imread("frames/frame0.jpg") 
-     compressed = cv2.imread("frames/frame_enc_2.jpg", 1) 
-     value = PSNR(original, compressed) 
-     print(f"PSNR value is {value} dB") 
+    # original = cv2.imread("frames/frame0.jpg") 
+    # compressed = cv2.imread("frames/frame_enc_2.jpg", 1) 
+    original = cv2.imread("frames/frame_enc_lena.jpg") 
+    compressed = cv2.imread("frames/res_lena.jpg") 
+    value = PSNR(original, compressed) 
+    print(f"PSNR value is {value} dB") 
        
 if __name__ == "__main__": 
     main() 

@@ -35,7 +35,7 @@ def get_pixels(enc_frame, width):
 			# pass
 	print(count)
 
-	cv2.imwrite('frames/frame_dec.jpg', org_frame)
+	# cv2.imwrite('frames/swapped/chk_dec31.png', org_frame)
 
 
 
@@ -54,11 +54,11 @@ def get_pixels_json(enc_frame, width):
 		count += 1
 	print(count)
 	new_frame = res(new_frame, 1280, 720)
-	# cv2.imwrite('frames/frame_dec.jpg', new_frame)
+	# cv2.imwrite('frames/swap/chk_dec30.png', new_frame)
 	return new_frame
 
 
-# enc_frame = cv2.imread('frames/frame_enc_9.jpg', cv2.IMREAD_UNCHANGED)
+# enc_frame = cv2.imread('frames/swap/chk_dec31.png', cv2.IMREAD_UNCHANGED)
 # enc_frame = res(enc_frame, 1024, 1024)
 # get_pixels(enc_frame, 1280)
 # get_pixels_json(enc_frame, 1024)

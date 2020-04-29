@@ -24,3 +24,7 @@ diff = (diff * 255).astype("uint8")
 
 # 6. You can print only the score if you want
 print("SSIM: {}".format(score))
+
+
+
+# "frames/swap/m2/enc_shot32.png"
