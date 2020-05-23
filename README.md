@@ -36,35 +36,6 @@ With the help of that algorithm we would be encrypting videos using Selective Fr
 ---
 
 
-### Installation 
+### Setup
 
-#### Use Python 3x
-
-#### Clone the repository
-```bash
-$ git clone https://github.com/ab-anand/Video-Encryption.git
-``` 
-
-#### Move inside the folder
-```bash
-$ cd Video-Encryption
-``` 
-
-#### Install virtual environment:
-```bash
-$ virtualenv -p python3 envname
-``` 
-#### Activate the environment: 
-```bash
-$ source envname/bin/activate
-``` 
-#### Install the requirements using requirements.txt file: 
-```bash
-$ pip install -r requirements.txt
-``` 
-
-#### Run the file: 
-```bash
-$ python capture_frames.py playback.mp4
-``` 
-
+Visit the [Setup file](SETUP.md)
