@@ -9,6 +9,53 @@ With the help of that algorithm we would be encrypting videos using Selective Fr
 
 ---
 
+### Project Tree
+```
+Video-Encryption/
+	├── bin
+	│   ├── setup
+	│   └── setup.sh
+	├── capture_frames.py
+	├── decrypt.py
+	├── encrypt.py
+	├── frame_editor.py
+	├── frames
+	│   ├── frame0.jpg
+	│   ├── frame_dec.jpg
+	│   ├── frame_enc_2.jpg
+	│   ├── frame_enc_9.jpg
+	│   └── frame_enc.jpg
+	├── hilbertt.py
+	├── img.jpg
+	├── input2.avi
+	├── input2.mp4
+	├── inverted_pixels.json
+	├── metrics
+	│   ├── correlation.py
+	│   ├── entropy.py
+	│   ├── hist.py
+	│   ├── ncc2.py
+	│   ├── plot_cor.py
+	│   ├── psnr.py
+	│   └── ssim.py
+	├── multiprocessing
+	│   ├── mulitprocessing.py
+	│   └── pooling.py
+	├── output.avi
+	├── output_dec.avi
+	├── pixels.json
+	├── playback.mp4
+	├── playout.avi
+	├── README.md
+	├── requirements.txt
+	├── resize_frame.py
+	├── reverse_pixels.py
+	├── SETUP.md
+	├── swap.py
+	└── video_dec.py
+
+```
+
 ### Project Files
 
 * `capture_frames.py` 
